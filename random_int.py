@@ -9,7 +9,7 @@ with open("visual.ps", mode="a") as file:
     file.writelines(
         "%!PS-Adobe-3.0 EPSF-3.0\n%%DocumentData: Clean7Bit\n%%Origin: 0 0\n"
         "%%BoundingBox: 0 0 2000 3000\n%%LanguageLevel: 1\n%%Pages: 1\n%%Page: 1 1\n"
-        f"<< /PageSize [2000 3000] >> setpagedevice\n7{L} setlinewidth\n"
+        f"<< /PageSize [2000 3000] >> setpagedevice\n{L} setlinewidth\n"
     )
     for n in range(1, N):
         a = random.randint(200, 1800)
